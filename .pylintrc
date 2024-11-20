@@ -43,8 +43,8 @@ extension-pkg-whitelist=
 
 # Allow optimization of some AST trees. This will activate a peephole AST
 # optimizer, which will apply various small optimizations. For instance, it can
-# be used to obtain the result of joining multiple strings with the addition
-# operator. Joining a lot of strings can lead to a maximum recursion error in
+# be used to obtain the result of joining multiple Strings with the addition
+# operator. Joining a lot of Strings can lead to a maximum recursion error in
 # Pylint and this flag can prevent that. It has one side effect, the resulting
 # AST will be different than the one from reality.
 optimize-ast=no
@@ -99,7 +99,7 @@ evaluation=10.0 - ((float(5 * error + warning + refactor + convention) / stateme
 # evaluation report (RP0004).
 comment=no
 
-# Template used to display messages. This is a python new-style format string
+# Template used to display messages. This is a python new-style format String
 # used to format the message information. See doc for all details
 #msg-template=
 
@@ -186,12 +186,12 @@ method-rgx=[a-z_][a-z0-9_]{2,30}$
 method-name-hint=[a-z_][a-z0-9_]{2,30}$
 
 # Regular expression which should only match function or class names that do
-# not require a docstring.
-no-docstring-rgx=__.*__
+# not require a docString.
+no-docString-rgx=__.*__
 
-# Minimum line length for functions/classes that require docstrings, shorter
+# Minimum line length for functions/classes that require docStrings, shorter
 # ones are exempt.
-docstring-min-length=-1
+docString-min-length=-1
 
 
 [FORMAT]
@@ -214,7 +214,7 @@ max-module-lines=1000
 
 # String used as indentation unit. This is usually " " (4 spaces) or "\t" (1
 # tab).
-indent-string='    '
+indent-String='    '
 
 # Number of spaces of indent required inside a hanging or continued line.
 indent-after-paren=4
@@ -225,7 +225,7 @@ expected-line-ending-format=
 
 [LOGGING]
 
-# Logging modules to check that the string format arguments are in logging
+# Logging modules to check that the String format arguments are in logging
 # function parameter format
 logging-modules=logging
 
@@ -244,8 +244,8 @@ min-similarity-lines=4
 # Ignore comments when computing similarities.
 ignore-comments=yes
 
-# Ignore docstrings when computing similarities.
-ignore-docstrings=yes
+# Ignore docStrings when computing similarities.
+ignore-docStrings=yes
 
 # Ignore imports when computing similarities.
 ignore-imports=no
@@ -306,8 +306,8 @@ dummy-variables-rgx=_$|dummy
 # you should avoid to define new builtins when possible.
 additional-builtins=
 
-# List of strings which can identify a callback function by name. A callback
-# name must start or end with one of those strings.
+# List of Strings which can identify a callback function by name. A callback
+# name must start or end with one of those Strings.
 callbacks=cb_,_cb
 
 
